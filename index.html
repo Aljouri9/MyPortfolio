@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ملف إنجازي</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>ملف إنجازي</h1>
+
+  <div id="home" class="page active">
+    <h2>اختر القسم</h2>
+    <div class="menu">
+      <div class="square" onclick="showPage('work')">الإنجازات والمشاريع</div>
+      <div class="square" onclick="showPage('programs')">البرامج والدورات</div>
+    </div>
+  </div>
+
+  <div id="work" class="page">
+    <h2>الإنجازات والمشاريع</h2>
+    <p>اختر السنة لعرض التفاصيل</p>
+    <div class="stars">
+      <a href="#" onclick="showPage('w2023')">⭐<span>2023</span></a>
+      <a href="#" onclick="showPage('w2024')">⭐<span>2024</span></a>
+      <a href="#" onclick="showPage('w2025')">⭐<span>2025</span></a>
+    </div>
+    <a href="#" class="back" onclick="showPage('home')">رجوع</a>
+  </div>
+
+  <div id="w2023" class="page">
+    <h2>الإنجازات والمشاريع 2023</h2>
+    <p>تصميم لعبة ببرنامج كانفا باسم “ساحة” لمعرض مدرسي</p>
+    <a href="#" class="back" onclick="showPage('work')">رجوع</a>
+  </div>
+
+  <div id="w2024" class="page">
+    <h2>الإنجازات والمشاريع 2024</h2>
+    <p>مشاركة في مسابقة أذكى</p>
+    <p>تصميم ثلاثي الأبعاد لآلة تفاعل متسلسل وجلب التصميم إلى أرض الواقع لمعرض مدرسي</p>
+    <a href="#" class="back" onclick="showPage('work')">رجوع</a>
+  </div>
+
+  <div id="w2025" class="page">
+    <h2>الإنجازات والمشاريع 2025</h2>
+    <p>تصميم موقع مرشد سياحي لكأس العالم جماعي 2034 لمشروع مدرسي جماعي</p>
+    <p>صممت متجر افتراضي يحاكي تجربة التسوق الإلكتروني باستخدام أدوات تصميم رقمية، ضمن إطار مشروع مدرسي</p>
+    <a href="#" class="back" onclick="showPage('work')">رجوع</a>
+  </div>
+
+  <div id="programs" class="page">
+    <h2>البرامج والدورات</h2>
+    <p>اختر السنة لعرض التفاصيل</p>
+    <div class="stars">
+      <a href="#" onclick="showPage('p2025')">⭐<span>2025</span></a>
+    </div>
+    <a href="#" class="back" onclick="showPage('home')">رجوع</a>
+  </div>
+
+  <div id="p2025" class="page">
+    <h2>البرامج والدورات 2025</h2>
+    <p>تصميم معرض افتراضي ثلاثي الأبعاد مع المدربة أسماء الجفري</p>
+    <p>الذكاء الاصطناعي</p>
+    <p>مجموعة مايكروسوفت على الأجهزة الذكية</p>
+    <a href="#" class="back" onclick="showPage('programs')">رجوع</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
